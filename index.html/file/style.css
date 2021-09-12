@@ -1,0 +1,254 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #ecf0f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+:root{
+  --shadow-color: 13px 13px 20px #cbced1, 
+  -13px -13px 20px #fff;
+  --gray-color: #555;  
+}
+.container {
+  width: 335px;
+  height: 620px;
+  border-radius: 10px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+}
+.arrow-back-icon {
+  margin: 10px;
+  font-size: 24px; 
+  color: #555;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease; 
+}
+div[class="arrow-back-icon"]:hover,div[class="settings-icon"]:hover{
+  color: crimson;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.settings-icon{
+  float: right;
+  margin: 10px;
+  color: var(--gray-color);
+  font-size: 24px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -44px;
+}
+div[class="title-from-app"]{
+  text-align: center;
+  margin-top: -49px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #555;
+  text-shadow: var(--shadow-color);
+  margin-left: 5px;
+  letter-spacing: 1px; 
+  user-select: none;
+  pointer-events: none;
+}
+/*header weather app */ 
+
+.container-2 {
+  width: 290px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  margin-left: 1rem;
+  position: relative;
+  margin-top: 2rem;
+}
+div[class="text-section"]{
+  color: #555;
+  position: absolute;
+  margin: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  user-select: none;
+}
+div[class="text-center"]{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  font-weight: 600;
+  margin: 9px;
+  margin-left: 6.2rem;
+  text-transform: capitalize;
+  word-spacing: 2px;
+  user-select: none;
+}
+.icon-forward {
+  float: right;
+  color: #555;
+  font-size: 24px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  box-shadow: var(--shadow-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 16rem;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/*section part */
+
+.container-3 {
+  width: 230px; 
+  height: 230px;
+  border-radius: 50%;
+  background-color: #ecf0f3;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+  inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), 
+  -0.5px -0.5px 0px  rgba(255, 255, 255, 0.1),
+  0.5px 0.5px 0px rgba(255, 255, 255, 0.15), 
+  0px 12px 10px -10px rgba(0, 0, 0, 0.05); 
+  position: absolute;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  overflow : hidden; 
+  border-top: 3px solid dodgerblue;
+  border-bottom: 3px solid crimson;
+}
+.container-4 {
+  width: 180px;
+  height: 180px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top: 24px;
+}
+
+.icon-thermometer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: dodgerblue;
+  min-height: 24vh;
+  margin-left: 1rem;
+}
+
+.text-thermometer {
+  font-size: 30px;
+  margin-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  color: crimson;
+} 
+.all-container {
+  margin-left: 1rem;
+}
+/*main weather app */
+section{
+  margin-left: 6px;
+  user-select: none;
+}
+.cool {
+  width: 100px;
+  height: 100px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  border-radius: 10px;
+  margin-top: 20rem;
+  margin-left: 1rem;
+}
+.icon-sun{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12vh;
+  font-size: 40px;
+  color: dodgerblue; 
+}
+.warm {
+  width: 100px;
+  height: 100px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  border-radius: 10px;
+  margin-left: 12rem;
+  margin-top: -6rem;
+}
+
+.icon-fire {
+  color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12vh;
+  font-size: 40px;
+}
+
+/* section part 2 */
+
+.text-sun, 
+.text-fire {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #555;
+}
+
+/*text */
+
+.update {
+  width: 300px;
+  height: 50px;
+  background-color: #ecf0f3;
+  box-shadow: var(--shadow-color);
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+.text-update-settings {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 7vh;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: capitalize;
+   font-weight: 600;
+   letter-spacing: 1px;
+   color: #555;
+   text-shadow: var(--shadow-color);
+}
+
+/*footer app */
+
+
